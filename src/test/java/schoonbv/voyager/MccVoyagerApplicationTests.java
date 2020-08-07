@@ -1,4 +1,4 @@
-package io.javabrains.mccvoyager;
+package schoonbv.voyager;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
