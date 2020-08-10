@@ -19,10 +19,10 @@ public class Voyager {
     private String routePath;
     @Embedded
     private Coordinate location;
-    private Coordinate startLoc;
-    private Coordinate endLoc;
-    private int startHour;
-    private int endHour;
+    //private Coordinate startLoc;
+    //private Coordinate endLoc;
+    //private int startHour;
+    //private int endHour;
 
 
     public Voyager() {
@@ -117,21 +117,21 @@ public class Voyager {
         return location;
     }
 
-    public int getStartHour() {
-        return startHour;
-    }
-
-    public void setStartHour(int startHour) {
-        this.startHour = startHour;
-    }
-
-    public int getEndHour() {
-        return endHour;
-    }
-
-    public void setEndHour(int endHour) {
-        this.endHour = endHour;
-    }
+//    public int getStartHour() {
+//        return startHour;
+//    }
+//
+//    public void setStartHour(int startHour) {
+//        this.startHour = startHour;
+//    }
+//
+//    public int getEndHour() {
+//        return endHour;
+//    }
+//
+//    public void setEndHour(int endHour) {
+//        this.endHour = endHour;
+//    }
 
 
 }

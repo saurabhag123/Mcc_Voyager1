@@ -5,26 +5,27 @@ import javax.persistence.*;
 @Entity
 @Table(name = "obstacles")
 public class Obstacle {
+	//types of objects:
+	private final String water ="Water";
+	private final String tree ="Tree";
 
 	@Id
     @GeneratedValue
     @Column(name = "obstacle_id")
     private int id;
     private String type;
-    
     @Embedded
     private Coordinate coordinate;
-    
+    //in meters
     private double radius;
-    
-    private final String circle ="Circle";
+
+    //private String shape; --- this is for later implementation
 
     public Obstacle() {
-    	
-    }
-	public Obstacle(int id, String type, Coordinate coordinate, double radius) {
-		this.id = id;
-		this.type = circle;
+	}
+
+	public Obstacle(String type, Coordinate coordinate, double radius) {
+		this.type = type;
 		this.coordinate = coordinate;
 		this.radius = radius;
 	}
