@@ -10,7 +10,7 @@ import schoonbv.voyager.services.ObstacleService;
 @SpringBootApplication
 public class MccVoyagerApplication {
 	@Autowired
-	ObstacleService obstacleService;
+	private ObstacleService obstacleService = new ObstacleService();
 
 	/**
 	 * comment this method out after having run the application once

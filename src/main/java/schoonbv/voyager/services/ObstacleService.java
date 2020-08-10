@@ -1,10 +1,12 @@
 package schoonbv.voyager.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import schoonbv.voyager.entities.Coordinate;
 import schoonbv.voyager.entities.Obstacle;
 import schoonbv.voyager.repositories.ObstacleRepository;
 
+@Service
 public class ObstacleService {
     @Autowired
     ObstacleRepository obstacleRepository;
